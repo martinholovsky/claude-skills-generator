@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"$CLAUDE_BASH_COMMAND\" | grep -qE 'rm -rf /|rm -rf ~|DROP TABLE' && echo 'BLOCKED: Dangerous command' && exit 2 || exit 0"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "case \"$CLAUDE_FILE_PATH\" in *.py) black --quiet \"$CLAUDE_FILE_PATH\" 2>/dev/null; isort --quiet \"$CLAUDE_FILE_PATH\" 2>/dev/null ;; *.ts|*.tsx|*.js|*.jsx|*.vue) prettier --write \"$CLAUDE_FILE_PATH\" 2>/dev/null ;; esac; exit 0"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "notify-send '{{PROJECT_NAME}}' \"$CLAUDE_NOTIFICATION\" 2>/dev/null || exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

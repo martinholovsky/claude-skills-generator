@@ -1,0 +1,115 @@
+# GitHub Actions CI Template for AI-Assisted Projects
+# Customize the placeholders ({{...}}) for your project
+
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  # Lint and type check
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # {{LANGUAGE_SETUP}} - Choose appropriate setup action
+      # For Node.js:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '{{NODE_VERSION}}'
+          cache: '{{PACKAGE_MANAGER}}'
+
+      # For Python:
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '{{PYTHON_VERSION}}'
+
+      - name: Install dependencies
+        run: {{INSTALL_COMMAND}}
+
+      - name: Run linter
+        run: {{LINT_COMMAND}}
+
+      - name: Type check
+        run: {{TYPECHECK_COMMAND}}
+
+  # Run tests
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '{{NODE_VERSION}}'
+          cache: '{{PACKAGE_MANAGER}}'
+
+      - name: Install dependencies
+        run: {{INSTALL_COMMAND}}
+
+      - name: Run tests
+        run: {{TEST_COMMAND}}
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+        if: always()
+        with:
+          file: ./coverage/lcov.info
+          fail_ci_if_error: false
+
+  # Build check
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '{{NODE_VERSION}}'
+          cache: '{{PACKAGE_MANAGER}}'
+
+      - name: Install dependencies
+        run: {{INSTALL_COMMAND}}
+
+      - name: Build
+        run: {{BUILD_COMMAND}}
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: {{BUILD_OUTPUT_PATH}}
+
+  # Security audit
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '{{NODE_VERSION}}'
+
+      - name: Security audit
+        run: {{AUDIT_COMMAND}}
+        continue-on-error: true
+
+  # Optional: E2E tests
+  # e2e:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: '{{NODE_VERSION}}'
+  #     - name: Install Playwright
+  #       run: npx playwright install --with-deps
+  #     - name: Run E2E tests
+  #       run: npm run test:e2e

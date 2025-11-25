@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+
+# Build outputs
+dist/
+build/
+.output/
+.nuxt/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# LLM Models (large files)
+llm_models/
+*.gguf
+*.bin
+*.safetensors
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+
+# Tauri
+src/tauri/target/
+src/tauri/WixTools/
+# Note: icons are tracked for builds
+
+# Temporary
+tmp/
+temp/
+*.tmp
