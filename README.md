@@ -1,4 +1,4 @@
-# AI Templates - Claude Code Project Bootstrapper
+# Claude AI Skill Generator
 
 A comprehensive template repository system for bootstrapping AI-assisted development projects with Claude Code integration. This repository provides production-ready templates, domain-specific skills, and automated setup scripts to quickly initialize new projects optimized for AI-assisted development.
 
@@ -6,7 +6,7 @@ A comprehensive template repository system for bootstrapping AI-assisted develop
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-org/ai-templates.git
+git clone https://github.com/martinholovsky/ai-templates.git
 cd ai-templates
 
 # Run the setup script (interactive mode)

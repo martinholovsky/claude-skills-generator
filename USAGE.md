@@ -1,6 +1,6 @@
-# Usage Guide - AI Templates
+# Usage Guide - Claude AI Skill Generator
 
-This comprehensive guide explains how to use the AI Templates repository to bootstrap your AI-assisted development projects.
+This comprehensive guide explains how to use the Claude AI Skill Generator to bootstrap your AI-assisted development projects.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ This comprehensive guide explains how to use the AI Templates repository to boot
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/ai-templates.git
+git clone https://github.com/martinholovsky/ai-templates.git
 cd ai-templates
 ```
 

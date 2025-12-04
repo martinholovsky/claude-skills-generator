@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =============================================================================
-# AI-Templates Repository Setup Script - Multi-Type Support
+# Claude AI Skill Generator - Repository Setup Script (Multi-Type Support)
 # =============================================================================
 # Enhanced version that supports multiple project types
 # Usage: ./setup-repo-multitype.sh [target-directory]
