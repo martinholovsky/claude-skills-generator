@@ -351,7 +351,7 @@ EOF
 # =============================================================================
 
 main() {
-    print_header "AI-Templates Multi-Type Repository Setup"
+    print_header "Claude AI Skill Generator - Multi-Type Setup"
 
     # Set target directory
     TARGET_DIR="${1:-$(pwd)}"
