@@ -1,6 +1,6 @@
-# Usage Guide - AI Templates
+# Usage Guide - Claude AI Skill Generator
 
-This comprehensive guide explains how to use the AI Templates repository to bootstrap your AI-assisted development projects.
+This comprehensive guide explains how to use the Claude AI Skill Generator to bootstrap your AI-assisted development projects.
 
 ## Table of Contents
 
@@ -26,8 +26,8 @@ This comprehensive guide explains how to use the AI Templates repository to boot
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/ai-templates.git
-cd ai-templates
+git clone https://github.com/martinholovsky/claude-skills-generator.git
+cd claude-skills-generator
 ```
 
 ### Make Scripts Executable
@@ -471,11 +471,11 @@ After project creation, you can copy additional skills:
 
 ```bash
 # Copy a specific skill
-cp -r /path/to/ai-templates/skills/skill-name ./skills/
+cp -r /path/to/claude-skills-generator/skills/skill-name ./skills/
 
 # Copy multiple skills
 for skill in skill1 skill2 skill3; do
-    cp -r /path/to/ai-templates/skills/$skill ./skills/
+    cp -r /path/to/claude-skills-generator/skills/$skill ./skills/
 done
 ```
 
@@ -953,7 +953,7 @@ grep -r "{{" . | grep -v ".git"
 **Solution:**
 ```bash
 # Manually copy skills
-cp -r /path/to/ai-templates/skills/[skill-name] ./skills/
+cp -r /path/to/claude-skills-generator/skills/[skill-name] ./skills/
 ```
 
 #### 4. Git Initialization Fails
@@ -1013,7 +1013,7 @@ After setup, review:
 ```bash
 # After setup
 git add .
-git commit -m "chore: initial project setup from ai-templates"
+git commit -m "chore: initial project setup from claude-skills-generator"
 
 # After customizations
 git commit -m "chore: customize CLAUDE.md and README"
@@ -1021,15 +1021,15 @@ git commit -m "chore: customize CLAUDE.md and README"
 
 ### 4. Keep Skills Updated
 
-Periodically sync skills from ai-templates:
+Periodically sync skills from Claude AI Skill Generator:
 
 ```bash
-# Pull latest changes from ai-templates
-cd /path/to/ai-templates
+# Pull latest changes from the generator
+cd /path/to/claude-skills-generator
 git pull
 
 # Copy updated skills to your project
-cp -r /path/to/ai-templates/skills/[skill-name] /path/to/your-project/skills/
+cp -r /path/to/claude-skills-generator/skills/[skill-name] /path/to/your-project/skills/
 ```
 
 ### 5. Document Project-Specific Patterns

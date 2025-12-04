@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =============================================================================
-# AI-Templates Repository Setup Script
+# Claude AI Skill Generator - Repository Setup Script
 # =============================================================================
 # Interactive script to guide through repository initialization for AI-assisted
 # development projects.
@@ -1365,7 +1365,7 @@ display_summary() {
 # =============================================================================
 
 main() {
-    print_header "AI-Templates Repository Setup"
+    print_header "Claude AI Skill Generator - Repository Setup"
 
     echo "This script will guide you through setting up a new repository with"
     echo "AI-assisted development support (Claude Code) and best practices."

@@ -1,6 +1,6 @@
 # Skills Reference - Complete Catalog
 
-This document provides a comprehensive catalog of all available skills in the AI Templates repository. Each skill is a domain-specific knowledge module that provides Claude Code with expert guidance, security considerations, and implementation patterns.
+This document provides a comprehensive catalog of all available skills in the Claude AI Skill Generator. Each skill is a domain-specific knowledge module that provides Claude Code with expert guidance, security considerations, and implementation patterns.
 
 ## Table of Contents
 
@@ -781,8 +781,8 @@ See [USAGE.md - Creating Custom Skills](./USAGE.md#creating-custom-skills) for i
 ### Keeping Skills Updated
 
 ```bash
-# Pull latest ai-templates
-cd /path/to/ai-templates
+# Pull latest Claude AI Skill Generator
+cd /path/to/claude-skills-generator
 git pull
 
 # Copy updated skill to your project
