@@ -32,7 +32,7 @@ A comprehensive template system with 67+ domain-specific skills, production-read
 
 Whether you're building a SaaS app, desktop tool, or API service - this generator sets you up with everything you need: proper structure, security considerations, testing frameworks, and AI-assisted workflows.
 
-🔗 **Check it out:** https://github.com/martinholovsky/ai-templates
+🔗 **Check it out:** https://github.com/martinholovsky/claude-skills-generator
 ⭐ **Star the repo** if you find it useful!
 
 #AI #ClaudeCode #DeveloperTools #OpenSource #Productivity #SoftwareEngineering #DevOps #Security #AIAssistedDevelopment
@@ -66,7 +66,7 @@ Turn hours of project setup into minutes. Open-source toolkit for bootstrapping 
 
 From "git clone" to "start coding" in under 5 minutes.
 
-🔗 https://github.com/martinholovsky/ai-templates
+🔗 https://github.com/martinholovsky/claude-skills-generator
 
 #AI #ClaudeCode #DevTools #OpenSource #Productivity
 
@@ -115,7 +115,7 @@ Supports Web, Desktop, CLI, API projects.
 Works with TypeScript, Python, Rust.
 Includes 67+ domain expertise modules.
 
-🔗 https://github.com/martinholovsky/ai-templates
+🔗 https://github.com/martinholovsky/claude-skills-generator
 
 Star it if you're tired of project setup taking longer than actual coding! ⭐
 
@@ -194,7 +194,7 @@ DevOps: ArgoCD, Cilium, Talos OS, Kanidm
 
 Contributions welcome. MIT licensed.
 
-🔗 https://github.com/martinholovsky/ai-templates
+🔗 https://github.com/martinholovsky/claude-skills-generator
 
 #ClaudeCode #DeveloperTools #OpenSource #SoftwareArchitecture #DevSecOps
 

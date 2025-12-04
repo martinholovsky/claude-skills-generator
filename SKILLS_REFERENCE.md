@@ -781,8 +781,8 @@ See [USAGE.md - Creating Custom Skills](./USAGE.md#creating-custom-skills) for i
 ### Keeping Skills Updated
 
 ```bash
-# Pull latest ai-templates
-cd /path/to/ai-templates
+# Pull latest Claude AI Skill Generator
+cd /path/to/claude-skills-generator
 git pull
 
 # Copy updated skill to your project

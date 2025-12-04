@@ -6,8 +6,8 @@ A comprehensive template repository system for bootstrapping AI-assisted develop
 
 ```bash
 # Clone this repository
-git clone https://github.com/martinholovsky/ai-templates.git
-cd ai-templates
+git clone https://github.com/martinholovsky/claude-skills-generator.git
+cd claude-skills-generator
 
 # Run the setup script (interactive mode)
 ./setup-repo-multitype.sh /path/to/your/new-project
