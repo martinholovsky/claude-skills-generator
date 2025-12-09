@@ -1,5 +1,8 @@
 # Claude AI Skill Generator
 
+[![Run in Smithery](https://smithery.ai/badge/skills/martinholovsky)](https://smithery.ai/skills?ns=martinholovsky&utm_source=github&utm_medium=badge)
+
+
 A comprehensive template repository system for bootstrapping AI-assisted development projects with Claude Code integration. This repository provides production-ready templates, domain-specific skills, and automated setup scripts to quickly initialize new projects optimized for AI-assisted development.
 
 ## 🚀 Quick Start
